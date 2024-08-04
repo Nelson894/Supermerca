@@ -1,0 +1,43 @@
+<?php
+
+
+if ($_POST) {
+
+    $ValorA = $_POST['ValorA'];
+    $ValorB = $_POST['ValorB'];
+
+
+    if (($ValorA != $ValorB || $ValorA > $ValorB)) {
+
+
+
+        echo "El valor es diferente el de B y tambien es mayor";
+    }
+}
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operacion de matematicas </title>
+</head>
+
+<body>
+    <form action="ejer.php" method="post">
+        ValorA:
+        <input type="text" name="ValorA" id="">
+        <br />
+        ValorB:
+        <input type="text" name="ValorB" id="">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
